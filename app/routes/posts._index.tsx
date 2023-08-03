@@ -18,12 +18,15 @@ export default function Posts() {
     <div>
       <h1>Posts</h1>
       <p>{message}</p>
-      {posts?.map((post) => (
-        <div key={post.id}>
-          <h2>{post.title}</h2>
-          <Link to={`/posts/${post.id}`}>Read more</Link>
-        </div>
-      ))}
+      <div>
+        {posts?.map((post) => (
+          <div key={post.id}>
+            <h2>{post.title}</h2>
+            <Link to={`/posts/${post.id}`}>Read more</Link>
+          </div>
+        ))}
+      </div>
+      <Link to='admin'>Admin</Link>
     </div>
   );
 }

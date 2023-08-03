@@ -8,6 +8,7 @@ generator client {
 }
 
 model Post {
-  id    Int    @id @default(autoincrement())
-  title String
+  id      Int    @id @default(autoincrement())
+  title   String
+  content String
 }
